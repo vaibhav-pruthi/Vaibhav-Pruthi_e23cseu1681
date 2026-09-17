@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  }
+
+  body {
+    @apply bg-white text-black antialiased selection:bg-black selection:text-white min-h-screen font-sans;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    font-weight: 340;
+    color: #000000;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D4D4;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A3A3A3;
+}
+
+/* Color-block sections without drop shadows */
+.color-block-lime {
+  background-color: #D9F99D;
+  color: #000000;
+  border-radius: 24px;
+}
+
+.color-block-lilac {
+  background-color: #E9D5FF;
+  color: #000000;
+  border-radius: 24px;
+}
+
+.color-block-cream {
+  background-color: #FEF3C7;
+  color: #000000;
+  border-radius: 24px;
+}
+
+.color-block-mint {
+  background-color: #CCFBF1;
+  color: #000000;
+  border-radius: 24px;
+}
+
+.color-block-pink {
+  background-color: #FCE7F3;
+  color: #000000;
+  border-radius: 24px;
+}
+
+.color-block-coral {
+  background-color: #FED7AA;
+  color: #000000;
+  border-radius: 24px;
+}
+
+.color-block-navy {
+  background-color: #0B0F19;
+  color: #FFFFFF;
+  border-radius: 24px;
+}
+
+/* Button pill tokens */
+.btn-pill-primary {
+  @apply bg-black text-white px-6 py-2.5 rounded-full font-medium text-sm inline-flex items-center justify-center gap-2 transition-transform active:scale-[0.98] hover:bg-neutral-800;
+}
+
+.btn-pill-secondary {
+  @apply bg-white text-black px-6 py-2.5 rounded-full font-medium text-sm inline-flex items-center justify-center gap-2 border border-black transition-colors hover:bg-neutral-100 active:scale-[0.98];
+}
+
+.btn-pill-magenta {
+  @apply bg-[#FF3366] text-white px-5 py-2 rounded-full font-medium text-xs inline-flex items-center justify-center gap-1.5 transition-transform hover:bg-[#E11D48] active:scale-[0.98];
+}
+
+.btn-pill-dark {
+  @apply bg-black/10 hover:bg-black/20 text-black px-4 py-2 rounded-full font-medium text-xs inline-flex items-center justify-center gap-1.5 transition-colors;
+}
+
+/* Hairline utility */
+.border-hairline {
+  border: 1px solid #E5E5E5;
+}
+
+.border-hairline-dark {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
