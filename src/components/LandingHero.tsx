@@ -160,7 +160,7 @@ export const LandingHero: React.FC<LandingHeroProps> = ({
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <span className="font-mono text-xs uppercase tracking-eyebrow font-bold text-neutral-500">
-            Assignment 3 Data Pack Scenarios
+            Demo passenger scenarios
           </span>
           <span className="font-mono text-xs text-neutral-400">
             Select a profile to load instant test state

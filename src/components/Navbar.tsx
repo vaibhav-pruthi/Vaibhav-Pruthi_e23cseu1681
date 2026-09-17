@@ -1,6 +1,6 @@
 import React from 'react';
 import { Customer } from '../types/index.ts';
-import { Plane, ShieldCheck, RefreshCw, LogOut, Sparkles, ChevronDown } from 'lucide-react';
+import { Plane, ShieldCheck, RefreshCw, LogOut, ChevronDown } from 'lucide-react';
 
 interface NavbarProps {
   currentCustomer: Customer | null;
@@ -107,14 +107,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <LogOut className="w-3.5 h-3.5" />
               </button>
             </div>
-          ) : (
-            <div className="flex items-center gap-2">
-              <span className="font-mono text-[11px] text-neutral-600 uppercase tracking-caption hidden sm:inline flex items-center gap-1">
-                <Sparkles className="w-3 h-3 text-black" />
-                Assignment 3 Data Pack
-              </span>
-            </div>
-          )}
+          ) : null}
 
         </div>
 
