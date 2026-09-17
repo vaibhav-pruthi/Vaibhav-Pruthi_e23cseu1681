@@ -1,6 +1,6 @@
 # Customer Resolution Agent
 
-Airline disruption support assistant for **Vaibhav Pruthi (`e23cseu1681`)**.
+Airline disruption support assistant.
 
 The app helps passengers with cancelled or delayed flights: it looks up a booking, applies airline policy, and walks the customer through rebooking, refunds, delay care, or supervisor escalation.
 
